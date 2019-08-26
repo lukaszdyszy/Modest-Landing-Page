@@ -138,14 +138,13 @@ section#slider{
   color: white;
   padding: 0;
 }
-#welcome{
-  min-height: 700px;
-  display: flex;
-  align-items: center;
+#headerSlider{
+  max-width: var(--cnt-width);
+  height: 700px;
   position: relative;
 }
 .wlc-slide{
-  width: var(--cnt-width);
+  margin: auto 0;
 }
 a.button{
   font-size: 15px;
@@ -167,10 +166,25 @@ p.wlc{
   padding: 20px 0;
   line-height: 140%;
 }
-.wlc-peg{
+ul#slidePag{
   position: absolute;
   bottom: 30px;
   right: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+ul#slidePag li{
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+}
+li.pagActive{
+  background-color: white;
 }
 
 /* about */
